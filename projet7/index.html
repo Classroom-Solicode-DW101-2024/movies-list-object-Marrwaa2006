@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <input  type="text" id="searchInput" placeholder="Enter the movie title" style="display: none;">
+    <button id="searchMovie" onclick="search()" style="display: none;">Search</button>
+    <table id="tab" style="display: none;">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Synopsis</th>
+                <th>Date</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody id="table"></tbody>
+    </table>
+
+    <form id="form" style="display: none;">
+        <label for="title">Title:</label> <br>
+        <input type="text" id="title" placeholder="Enter the title" required>
+        <br><br>
+        <label for="synopsis">Synopsis:</label>
+        <input type="text" id="synopsis" placeholder="Enter the synopsis" required>
+        <br><br>
+        <label for="date">Date:</label> <br>
+        <input type="number" id="date" placeholder="Enter the date" required>
+        <br><br>
+        <label for="rating">Rating:</label>
+        <input type="number" id="rating" placeholder="Enter the rating" required>
+        <br><br>
+        <button  type="button"  class="btn" onclick="addFilm()">Add</button>
+    </form>
+
+    <h1 id="header">Menu</h1>
+    <button id="button" onclick="displayMovies()">Movies</button>
+    <button id="button2" onclick="addMovie()">Add Movie</button>
+ <script src="script.js"></script>   
+</body>
+</html>
